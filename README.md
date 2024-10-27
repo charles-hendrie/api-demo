@@ -31,7 +31,11 @@ Implemented a stack separating the handling of the request into levels of concer
 2. Service (business logic)
 3. Delegate (data retrieval)
 
+## Notes
+
+To start, only a final catch has been implemented in the controller to capture any errors in the processing of a user with a 404 Not Found returned.
+
 ## Todos
 
 1. Add exception / error handling
-2. Additional logging
+2. Add logging
