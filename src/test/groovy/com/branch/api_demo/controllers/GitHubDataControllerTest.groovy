@@ -68,4 +68,25 @@ class GitHubDataControllerTest extends Specification {
         responseData.repos[0].name == 'name'
         responseData.repos[0].url == 'url'
     }
+
+    def 'Get GitHub user when request fails'() {
+
+        given:
+        def userName = 'user_name'
+
+        when:
+        def response =
+                mockMvc.perform(
+                        get('/api/github/users/' + userName)
+                                .contentType(MediaType.APPLICATION_JSON))
+                        .andReturn()
+                        .response
+
+        then:
+        1 * mockGitHubDataService.getGitHubData(userName) >> { throw new Exception() }
+
+        and:
+        response
+        response.status == HttpStatus.NOT_FOUND.value()
+    }
 }
