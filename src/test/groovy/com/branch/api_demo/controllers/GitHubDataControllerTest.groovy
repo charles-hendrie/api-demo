@@ -4,6 +4,7 @@ import com.branch.api_demo.models.GitHubDataRepo
 import com.branch.api_demo.models.GitHubDataResponse
 import com.branch.api_demo.services.GitHubDataService
 import com.fasterxml.jackson.databind.ObjectMapper
+import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import spock.lang.Specification
@@ -51,6 +52,7 @@ class GitHubDataControllerTest extends Specification {
 
         and:
         response
+        response.status == HttpStatus.OK.value()
         def json = response.getContentAsString()
         def responseData = new ObjectMapper().readValue(json, GitHubDataResponse.class)
         responseData
