@@ -1,4 +1,4 @@
-package com.branch.api_demo.delegates;
+package com.branch.api_demo.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

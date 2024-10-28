@@ -1,8 +1,8 @@
 package com.branch.api_demo.delgates
 
 import com.branch.api_demo.delegates.GitHubDataDelegate
-import com.branch.api_demo.delegates.GitHubDataRepoResponse
-import com.branch.api_demo.delegates.GitHubDataUserResponse
+import com.branch.api_demo.models.GitHubDataRepoResponse
+import com.branch.api_demo.models.GitHubDataUserResponse
 import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.HttpEntity
 import org.springframework.http.HttpMethod

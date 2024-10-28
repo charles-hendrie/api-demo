@@ -1,5 +1,7 @@
 package com.branch.api_demo.delegates;
 
+import com.branch.api_demo.models.GitHubDataRepoResponse;
+import com.branch.api_demo.models.GitHubDataUserResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;

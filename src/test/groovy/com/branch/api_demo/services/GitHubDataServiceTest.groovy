@@ -1,8 +1,8 @@
 package com.branch.api_demo.services
 
 import com.branch.api_demo.delegates.GitHubDataDelegate
-import com.branch.api_demo.delegates.GitHubDataRepoResponse
-import com.branch.api_demo.delegates.GitHubDataUserResponse
+import com.branch.api_demo.models.GitHubDataRepoResponse
+import com.branch.api_demo.models.GitHubDataUserResponse
 import spock.lang.Specification
 import spock.lang.Subject
 
