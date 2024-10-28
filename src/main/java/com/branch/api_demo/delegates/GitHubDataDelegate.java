@@ -28,6 +28,8 @@ public class GitHubDataDelegate {
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
 
+        // TODO: add exception handling and a status check
+
         return restTemplate.exchange(
                         "https://api.github.com/users/" + username,
                         HttpMethod.GET,
@@ -40,6 +42,8 @@ public class GitHubDataDelegate {
 
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
+
+        // TODO: add exception handling and a status check
 
         return restTemplate.exchange(
                         "https://api.github.com/users/" + username + "/repos",
