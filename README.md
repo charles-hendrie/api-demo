@@ -4,7 +4,14 @@ A Java / Spring Boot service to retrieve GitHub user information.
 
 ## How To Run
 
+To run the service locally, perform the follow steps...
+
 - Clone the repo
+
+```
+https://github.com/charles-hendrie/api-demo
+```
+
 - Build the service 
 
 ```
@@ -17,7 +24,7 @@ $ ./gradlew clean build
 $ ./gradlew bootRun
 ```
 
-- Make a GET request to the endpoint to retrieve the user's data
+- Execute a GET request to retrieve a user's data
 
 ```
 localhost:8080/api/github/users/[username]
